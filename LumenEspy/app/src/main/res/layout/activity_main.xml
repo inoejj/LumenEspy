@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="251dp"
+        android:layout_height="253dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="25000"
+        app:cpb_progressbar_color="#42A5F5"
+        app:cpb_progressbar_width="12dp"
+        app:cpb_round_border="true" />
+
+    <TextView
+        android:id="@+id/textIllu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:text="Illuminance"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:text="level"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="310dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:textSize="20sp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="310dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avg"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="310dp"/>
+
+    <TextView
+        android:id="@+id/textMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="340dp"/>
+
+    <TextView
+        android:id="@+id/textMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="340dp"/>
+
+    <TextView
+        android:id="@+id/textAvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="340dp"/>
+
+    <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+        android:id="@+id/aa_chart_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:layout_width="360dp"
+        android:layout_height="320dp">
+
+    </com.github.aachartmodel.aainfographics.aachartcreator.AAChartView>
+
+
+
+</RelativeLayout>
