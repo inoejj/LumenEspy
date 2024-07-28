@@ -31,5 +31,4 @@ Key Features:
 ![](images/demo.gif)
 
 # Developer
-Please feel free to email me for more information or help.
-- Jia Jie Choong <jchoong@uw.edu>
+- Jia Jie Choong
